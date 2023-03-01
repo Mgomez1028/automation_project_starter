@@ -1,0 +1,925 @@
+{
+  "_type": "c-layout-csv",
+  "delimiter": "|",
+  "namespace": "com.equifax.fabric.ingestion.do_consumer_identity",
+  "fields": [
+    {
+      "_type": "c-field-csv",
+      "name": "bch_c_afiliado_no",
+      "index": 0,
+      "target": "affiliateIdNumber"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "bch_c_registro_inicio",
+      "index": 1,
+      "target": "batchInitialRecordCode"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "bch_c_registro_fin",
+      "index": 2,
+      "target": "batchFinalRecordCode"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "bch_l_numero_encryptado_ok",
+      "index": 3,
+      "target": "batchEncryptionFlag"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "bch_f_batch_creo_afiliado",
+      "index": 4,
+      "target": "batchAffiliateCreateDate"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "bch_f_batch_creado_en_txt",
+      "index": 5,
+      "target": "batchCreateDateText"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "bch_f_batch_uploaded",
+      "index": 6,
+      "target": "batchInsertionDate"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "bch_u_batch_no",
+      "index": 7,
+      "target": "batchInsertionNumber"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "bch_d_batch_secuencial_no",
+      "index": 8,
+      "target": "batchSeqNumber"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "bch_c_reportado_forma",
+      "index": 9
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "bch_u_version",
+      "index": 10,
+      "target": "batchVersionCode"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "bch_c_evento_tipo",
+      "index": 11,
+      "target": "batchEventType"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "bch_u_evento_no",
+      "index": 12,
+      "target": "batchEventNumber"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "bch_c_producto",
+      "index": 13,
+      "target": "productTypeCode"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "cta_f_mes_consolidado",
+      "index": 14,
+      "target": "consolidationDate"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_d_nombres",
+      "index": 15,
+      "target": "firstName"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_d_apellido1",
+      "index": 16,
+      "target": "lastName1"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_d_apellido2",
+      "index": 17,
+      "target": "lastName2"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_c_rol",
+      "index": 18,
+      "target": "accountRelationCode"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_c_sexo",
+      "index": 19,
+      "target": "gender"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_d_lugar_de_nacimiento",
+      "index": 20,
+      "target": "birthPlace"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_f_fdn",
+      "index": 21,
+      "target": "birthDate"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_d_idn1",
+      "index": 22,
+      "target": "personIdNumber1"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_c_idn1_rol",
+      "index": 23,
+      "target": "rolId1"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_d_idn2",
+      "index": 24,
+      "target": "personIdNumber2"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_c_idn2_rol",
+      "index": 25,
+      "target": "rolId2"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_d_idn3",
+      "index": 26,
+      "target": "personIdNumber3"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_c_idn3_rol",
+      "index": 27,
+      "target": "rolId3"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_d_idn4",
+      "index": 28,
+      "target": "personIdNumber4"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_c_idn4_rol",
+      "index": 29,
+      "target": "rolId4"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_c_nac",
+      "index": 30,
+      "target": "nationalityCode"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_d_dir1",
+      "index": 31,
+      "target": "addrLine1"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_c_dir1_rol",
+      "index": 32,
+      "target": "addrRol1"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_d_dir2",
+      "index": 33,
+      "target": "addrLine2"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_c_dir2_rol",
+      "index": 34,
+      "target": "addrRol2"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_d_dir3",
+      "index": 35,
+      "target": "addrLine3"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_c_dir3_rol",
+      "index": 36,
+      "target": "addrRol3"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_d_dir4",
+      "index": 37,
+      "target": "addrLine4"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_c_dir4_rol",
+      "index": 38,
+      "target": "addrRol4"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_d_dir5",
+      "index": 39,
+      "target": "addrLine5"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_c_dir5_rol",
+      "index": 40,
+      "target": "addrRol5"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_d_dir6",
+      "index": 41,
+      "target": "addrLine6"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_c_dir6_rol",
+      "index": 42,
+      "target": "addrRol6"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_d_dir7",
+      "index": 43,
+      "target": "addrLine7"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_c_dir7_rol",
+      "index": 44,
+      "target": "addrRol7"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_d_dir8",
+      "index": 45,
+      "target": "addrLine8"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_c_dir8_rol",
+      "index": 46,
+      "target": "addrRol8"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_d_dir9",
+      "index": 47,
+      "target": "addrLine9"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_c_dir9_rol",
+      "index": 48,
+      "target": "addrRol9"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_d_dir10",
+      "index": 49,
+      "target": "addrLine10"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_c_dir10_rol",
+      "index": 50,
+      "target": "addrRol10"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_d_dir11",
+      "index": 51,
+      "target": "addrLine11"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_c_dir11_rol",
+      "index": 52,
+      "target": "addrRol11"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_d_dir12",
+      "index": 53,
+      "target": "addrLine12"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_c_dir12_rol",
+      "index": 54,
+      "target": "addrRol12"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_c_pais",
+      "index": 55,
+      "target": "country"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_d_tel1",
+      "index": 56,
+      "target": "phone1"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_c_tel1_rol",
+      "index": 57,
+      "target": "phoneRol1"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_d_tel2",
+      "index": 58,
+      "target": "phone2"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_c_tel2_rol",
+      "index": 59,
+      "target": "phoneRol2"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_d_tel3",
+      "index": 60,
+      "target": "phone3"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_c_tel3_rol",
+      "index": 61,
+      "target": "phoneRol3"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_d_tel4",
+      "index": 62,
+      "target": "phone4"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_c_tel4_rol",
+      "index": 63,
+      "target": "phoneRol4"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_d_tel5",
+      "index": 64,
+      "target": "phone5"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_c_tel5_rol",
+      "index": 65,
+      "target": "phoneRol5"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_d_tel6",
+      "index": 66,
+      "target": "phone6"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_c_tel6_rol",
+      "index": 67,
+      "target": "phoneRol6"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_c_estado_civil",
+      "index": 68,
+      "target": "maritalStatus"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "per_c_ocupacion",
+      "index": 69,
+      "target": "occupationCode"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "pad_d_nombres",
+      "index": 70,
+      "target": "fatherFullName"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "pad_d_apellidos",
+      "index": 71,
+      "target": "fatherLastName"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "pad_d_idn1",
+      "index": 72,
+      "target": "fatherIdNumber1"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "pad_c_idn1_rol",
+      "index": 73,
+      "target": "fatherRol1"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "pad_d_idn2",
+      "index": 74,
+      "target": "fatherIdNumber2"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "pad_c_idn2_rol",
+      "index": 75,
+      "target": "fatherRol2"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "mad_d_nombres",
+      "index": 76,
+      "target": "motherFullName"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "mad_d_apellidos",
+      "index": 77,
+      "target": "motherLastName"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "mad_d_idn1",
+      "index": 78,
+      "target": "motherIdNumber1"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "mad_c_idn1_rol",
+      "index": 79,
+      "target": "motherRol1"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "mad_d_idn2",
+      "index": 80,
+      "target": "motherIdNumber2"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "mad_c_idn2_rol",
+      "index": 81,
+      "target": "motherRol2"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "coy_d_nombres",
+      "index": 82,
+      "target": "spouseFullName"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "coy_d_apellidos",
+      "index": 83,
+      "target": "spouseLastName"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "coy_c_sexo",
+      "index": 84,
+      "target": "spouseGender"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "coy_d_idn1",
+      "index": 85,
+      "target": "spouseIdNumber1"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "coy_c_idn1_rol",
+      "index": 86,
+      "target": "spouseRol1"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "coy_d_idn2",
+      "index": 87,
+      "target": "spouseIdNumber2"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "coy_c_idn2_rol",
+      "index": 88,
+      "target": "spouseRol2"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_ced_sexo",
+      "index": 89,
+      "target": "genderDescription"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_pdn",
+      "index": 90,
+      "target": "birthCountry"
+    },
+    {
+      "_type": "c-field-csv",
+        "name": "dcr_u_registro_no",
+      "index": 91,
+      "target": "recordNumber"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_image_path",
+      "index": 92,
+      "target": "imagePath"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "jce_f_gen_prod",
+      "index": 93,
+      "target": "productDate"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "jce_u_version_prod",
+      "index": 94,
+      "target": "productVersion"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_nacionalidad",
+      "index": 95,
+      "target": "nationalityDescr"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_cedula_padre",
+      "index": 96,
+      "target": "fatherIdCardNumber"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_cedula_madre",
+      "index": 97,
+      "target": "motherIdCardNumber"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_f_fecha_expe",
+      "index": 98,
+      "target": "fileDate"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_f_fecha_natu",
+      "index": 99,
+      "target": "naturalizationDate"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_f_fecha_expiracion",
+      "index": 100,
+      "target": "idCardExpirationDate"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_c_cod_recinto",
+      "index": 101,
+      "target": "electoralPlaceCode"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_colegio",
+      "index": 102,
+      "target": "electoralPlaceName"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_categoria",
+      "index": 103,
+      "target": "categoryDescr"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_tipo_acta",
+      "index": 104,
+      "target": "electoralRecordType"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_acta_mun",
+      "index": 105,
+      "target": "municipalElectoralRecord"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_acta_ofic",
+      "index": 106,
+      "target": "officialElectoralRecord"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_acta_libro",
+      "index": 107,
+      "target": "electoralRecordBook"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_acta_folio",
+      "index": 108,
+      "target": "electoralRecordFolio"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_acta_ano",
+      "index": 109,
+      "target": "electoralRecordYear"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_tipo_libro",
+      "index": 110,
+      "target": "electoralRecordBookType"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_estatus",
+      "index": 111,
+      "target": "idCardStatus"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_desc_cedula",
+      "index": 112,
+      "target": "idCardDescr"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_muni_origen",
+      "index": 113,
+      "target": "originMunicipalityDescr"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_mesa_origen",
+      "index": 114,
+      "target": "electoralOriginTable"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_mesa",
+      "index": 115,
+      "target": "electoralTable"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_f_fecha_capt",
+      "index": 116,
+      "target": "captureDate"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_cedula_conyuge",
+      "index": 117,
+      "target": "spouseIdCardNumber"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_ocupacion",
+      "index": 118,
+      "target": "occupationDescr"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_senas",
+      "index": 119,
+      "target": "bodyMarks"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_c_sangre",
+      "index": 120,
+      "target": "bloodTypeCode"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_sangre",
+      "index": 121,
+      "target": "bloodTypeDescr"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_c_piel",
+      "index": 122,
+      "target": "skinTypeCode"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_piel",
+      "index": 123,
+      "target": "skinType"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_municipio_origen",
+      "index": 124,
+      "target": "originMunicipalityName"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_c_causa_inabilitado_tipo",
+      "index": 125,
+      "target": "disableCauseTypeCode"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_c_causa_inabilitado_codigo",
+      "index": 126,
+      "target": "disableCauseCode"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_causa_inhabilitado_tipo",
+      "index": 127,
+      "target": "disableCauseDescr"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_causa_inhabilitado",
+      "index": 128,
+      "target": "disableCauseTypeDescr"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_image_path_nt",
+      "index": 129,
+      "target": "imagePathNT"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_c_categoria",
+      "index": 130,
+      "target": "categoryCode"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_c_municipio",
+      "index": 131,
+      "target": "municipalityCode"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_c_ciudad",
+      "index": 132,
+      "target": "cityCode"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_c_sector",
+      "index": 133,
+      "target": "areaCode"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_c_estado_civil",
+      "index": 134,
+      "target": "maritalStatusCode"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_u_deposito_secuencial",
+      "index": 135,
+      "target": "depositSeqId"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_c_cod_prof",
+      "index": 136,
+      "target": "professionCode"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_codigo_carnet",
+      "index": 137,
+      "target": "idCardNumber"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_codigo_municipio_electoral",
+      "index": 138,
+      "target": "electoralMunicipalityCode"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_cod_recinto_electoral",
+      "index": 139,
+      "target": "precinctCode"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_solicitud",
+      "index": 140,
+      "target": "requestDescr"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_acta_numero",
+      "index": 141,
+      "target": "electoralRecordNumber"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_solicitud_dow",
+      "index": 142
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_ruta_firma",
+      "index": 143,
+      "target": "signaturePath"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_ruta_huella_d",
+      "index": 144,
+      "target": "rightFingerPrintPath"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_ruta_huella_i",
+      "index": 145,
+      "target": "leftFingerPrintPath"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_tipo_masc_conyu",
+      "index": 146
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_tipo_masc_masre",
+      "index": 147
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_tipo_masc_padre",
+      "index": 148
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_estatus_foto",
+      "index": 149,
+      "target": "photoStatus"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_estatus_firma",
+      "index": 150,
+      "target": "originalSignatureStatus"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_foto_size",
+      "index": 151,
+      "target": "photoSize"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_foto_origen",
+      "index": 152,
+      "target": "originalPhotoDescr"
+    },
+    {
+      "_type": "c-field-csv",
+      "name": "dcr_d_hash_nombre",
+      "index": 153
+    }
+  ]
+}
